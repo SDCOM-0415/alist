@@ -36,4 +36,4 @@ EXPOSE 8888/tcp
 
 USER webssh
 
-CMD ["python", "run.py"]
+CMD ["python", "run.py", "--xsrf=False --xheaders=False --origin='*' --debug --delay=6"]
